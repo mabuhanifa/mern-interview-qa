@@ -1,7 +1,5 @@
 /*
 
-Certainly! Here are the answers to the first five questions:
-
 1. What is Express.js?
 Express.js is a fast and minimalist web application framework for Node.js. It provides a robust set of features and tools for building web applications and APIs. Express.js is known for its simplicity and flexibility, allowing developers to create scalable and modular applications.
 

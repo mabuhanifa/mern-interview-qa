@@ -9,7 +9,35 @@ CSS stands for Cascading Style Sheets. It is a style sheet language used for des
 Inline CSS is applied directly within the HTML element using the "style" attribute. Internal CSS is defined within the `<style>` tags in the `<head>` section of an HTML file. External CSS is stored in a separate CSS file and linked to the HTML file using the `<link>` tag.
 
 3. What is the CSS box model?
-The CSS box model describes the layout and spacing of elements on a web page. It consists of the content, padding, border, and margin of an element.
+The `box-sizing: border-box;` CSS property defines how the width and height of an element are calculated. By default, the width and height of an element only include the content of the element, not the padding or border. This means that if you set the width of an element to 100px, the element will actually be 100px wide, plus the width of any padding or border you have added.
+
+The `box-sizing: border-box;` property tells the browser to include the padding and border in the width and height of an element. This means that if you set the width of an element to 100px, the element will actually be 100px wide, including the padding and border.
+
+This can be useful for a number of reasons. First, it makes it easier to size elements, since you don't have to add extra padding or border to get the desired width or height. Second, it can help to make the layout of your web pages more consistent, since all of your elements will be sized in the same way.
+
+Here is an example of how the `box-sizing: border-box;` property works. Without the property, the following code would create two div elements with the same specified width and height:
+
+```html
+<div style="width: 300px; height: 100px;">This div is smaller</div>
+<div style="width: 300px; height: 100px;">This div is bigger</div>
+```
+
+However, with the `box-sizing: border-box;` property, the two div elements would have the same size, since the padding and border would be included in the width and height of each element.
+
+```html
+<div style="width: 300px; height: 100px; box-sizing: border-box;">This div is smaller</div>
+<div style="width: 300px; height: 100px; box-sizing: border-box;">This div is bigger</div>
+```
+
+The `box-sizing: border-box;` property is supported by all major browsers.
+
+Here are some of the advantages of using the `box-sizing: border-box;` property:
+
+* It makes it easier to size elements.
+* It can help to make the layout of your web pages more consistent.
+* It can improve the rendering performance of your web pages.
+
+If you are not already using the `box-sizing: border-box;` property, I recommend that you give it a try. It is a simple way to improve the appearance and performance of your web pages.
 
 4. How do you select elements with CSS?
 You can select elements using various CSS selectors such as element selectors, class selectors, ID selectors, attribute selectors, etc.
