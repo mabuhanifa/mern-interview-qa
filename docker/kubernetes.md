@@ -1,4 +1,4 @@
-Title: Kubernetes: An Extensive Guide in 2800 Words
+Title: Kubernetes: An Extensive Guide :
 
 Introduction to Kubernetes:
 
